@@ -22,6 +22,7 @@ function gameStart(btn) {
         pipe.style.animationPlayState = "running";
         audio.play();
         audioPaused = false;
+        bntMusic.disabled = false;
         pauseMessage.remove();
     }
     else {
@@ -29,6 +30,7 @@ function gameStart(btn) {
         pipe.style.animationPlayState = "paused";
         audio.pause();
         audioPaused = true;
+        bntMusic.disabled = true;
         showPauseMessage();
     }
     btn.blur();
@@ -60,7 +62,7 @@ function jump(event) {
 
 function showPauseMessage() {
     document.body.appendChild(pauseMessage);
-    pauseMessage.textContent = "Start/Pause"
+    pauseMessage.textContent = "Game Paused"
     pauseMessage.style.color = 'red'
     pauseMessage.style.fontSize = '80px'
     pauseMessage.style.position = "absolute";
@@ -112,4 +114,3 @@ const loop = setInterval(() => {
 
 document.addEventListener('keydown', jump);
 document.addEventListener('mousedown', jump);
-
