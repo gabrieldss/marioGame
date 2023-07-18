@@ -25,7 +25,7 @@
     position: absolute;
     bottom: 0;
     width: 80px;
-    animation: pipe-animation 1.8s infinite linear;
+    animation: pipe-animation 2.5s infinite linear;
     height: 95px;
 }
 
@@ -75,13 +75,12 @@
     }
 }
 
-.button-container {
+.buttons-container {
     position: absolute;
-    bottom: 20px;
-    right: 20px;
+    top: 55px;
+    left: 20px;
     z-index: 999;
 }
-
 
 .score-container {
     position: absolute;

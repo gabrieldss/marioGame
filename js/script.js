@@ -3,21 +3,45 @@ const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
 const clouds = document.querySelector('.clouds');
 const audio = document.getElementById('mario-music');
+const bntStart = document.querySelector('.btn-start');
+const bntMusic = document.querySelector('.btn-music');
 const gameOverAudio = document.getElementById('game-over-music');
+const pauseMessage = document.createElement('div');
 let count = 0;
 let marioJumped = true;
 let pipeJumped = false;
+let audioPaused = false;
 
 function gamePlay() {
     window.location.reload();
 }
 
+function gameStart(btn) {
+    if (pipe.style.animationPlayState == "paused") {
+        clouds.style.animationPlayState = "running";
+        pipe.style.animationPlayState = "running";
+        audio.play();
+        audioPaused = false;
+        pauseMessage.remove();
+    }
+    else {
+        clouds.style.animationPlayState = "paused";
+        pipe.style.animationPlayState = "paused";
+        audio.pause();
+        audioPaused = true;
+        showPauseMessage();
+    }
+    btn.blur();
+}
+
 function musicControll(btn) {
     if (audio.paused) {
         audio.play();
+        audioPaused = false;
     }
     else {
         audio.pause();
+        audioPaused = true;
     }
     btn.blur();
 }
@@ -34,6 +58,16 @@ function jump(event) {
     }
 }
 
+function showPauseMessage() {
+    document.body.appendChild(pauseMessage);
+    pauseMessage.textContent = "Start/Pause"
+    pauseMessage.style.color = 'red'
+    pauseMessage.style.fontSize = '80px'
+    pauseMessage.style.position = "absolute";
+    pauseMessage.style.top = "40%";
+    pauseMessage.style.left = "40%";
+}
+
 function showGameOverMessage() {
     const gameOverMessage = document.createElement('div');
     gameOverMessage.textContent = "Game Over"
@@ -44,8 +78,12 @@ function showGameOverMessage() {
     gameOverMessage.style.top = "40%";
     gameOverMessage.style.left = "40%";
     clouds.style.animationPlayState = "paused";
+    bntMusic.disabled = true;
     audio.pause();
-    gameOverAudio.play();
+    bntStart.disabled = true;
+    if (!audioPaused) {
+        gameOverAudio.play();
+    }
 }
 
 const loop = setInterval(() => {
@@ -68,7 +106,7 @@ const loop = setInterval(() => {
         count++;
         pipeJumped = true;
         const scoreValueElement = document.getElementById('score-value');
-        scoreValueElement.textContent = 'Score: ' +  count.toString();
+        scoreValueElement.textContent = 'Score: ' + count.toString();
     }
 }, 10)
 

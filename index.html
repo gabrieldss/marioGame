@@ -16,13 +16,14 @@
         <img src="images/pipe.png" class="pipe">
     </div>
     <div class="score-container">
-       <span id="score-value">Score: 0<span>
-    </div> 
-    <div class="button-container">
-        <button class="btn-play" onclick="gamePlay()">Play</button>
+        <span id="score-value">Score: 0<span>
+    </div>
+    <div class="buttons-container">
+        <button class="btn-play" onclick="gamePlay()">New Game</button>
+        <button class="btn-start" onclick="gameStart(this)">Start/Pause</button>
         <button class="btn-music" onclick="musicControll(this)">Music</button>
-    </div> 
-    <audio id="mario-music" autoplay loop>
+    </div>
+    <audio id="mario-music" loop>
         <source src="audios/mario-music.mp3" type="audio/mp3">
     </audio>
     <audio id="game-over-music">
