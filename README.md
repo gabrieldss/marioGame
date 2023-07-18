@@ -10,6 +10,9 @@ https://gabrieldss.github.io/marioGame/
 
 # Commands
 Jump ---> Space / Enter / Up arrow;
+
 New Game ---> N
+
 Start/Pause ---> P
+
 Music ---> M
