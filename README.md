@@ -1,4 +1,4 @@
-# Start to VSCode:
+# Start on VSCode:
 __1__- npm install -g http-server
 
 __2__- http-server
