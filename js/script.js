@@ -57,7 +57,7 @@ function musicControll() {
 }
 
 function shortCuts(event) {
-    if (event.keyCode === 32 || event.keyCode === 38 || event.keyCode === 13) {
+    if (!gamePaused && (event.keyCode === 32 || event.keyCode === 38 || event.keyCode === 13)) {
         mario.classList.add('jump');
         setTimeout(function () {
             mario.classList.remove('jump');
@@ -130,4 +130,3 @@ const loop = setInterval(() => {
 }, 10)
 
 document.addEventListener('keydown', shortCuts);
-document.addEventListener('mousedown', jump);
