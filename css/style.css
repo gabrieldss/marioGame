@@ -25,7 +25,7 @@
     position: absolute;
     bottom: 0;
     width: 80px;
-    animation: pipe-animation 1.8s infinite linear;
+    animation: pipe-animation 1.5s infinite linear;
     height: 95px;
 }
 
