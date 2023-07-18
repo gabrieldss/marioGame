@@ -9,7 +9,7 @@ __2__- http-server
 https://gabrieldss.github.io/marioGame/
 
 # Commands
-Jump ---> Space / Enter / Up arrow;
+Jump ---> Space / Enter / Up arrow
 
 New Game ---> N
 
