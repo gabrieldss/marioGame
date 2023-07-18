@@ -83,7 +83,7 @@ function showPauseMessage() {
     pauseMessage.style.fontSize = '80px'
     pauseMessage.style.position = "absolute";
     pauseMessage.style.top = "40%";
-    pauseMessage.style.left = "50%";
+    pauseMessage.style.left = "35%";
 }
 
 function showGameOverMessage() {
@@ -94,7 +94,7 @@ function showGameOverMessage() {
     gameOverMessage.style.fontSize = '90px'
     gameOverMessage.style.position = "absolute";
     gameOverMessage.style.top = "40%";
-    gameOverMessage.style.left = "50%";
+    gameOverMessage.style.left = "35%";
     clouds.style.animationPlayState = "paused";
     btnMusic.disabled = true;
     audio.pause();
