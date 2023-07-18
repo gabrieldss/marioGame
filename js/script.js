@@ -10,7 +10,7 @@ const pauseMessage = document.createElement('div');
 let count = 0;
 let marioJumped = true;
 let pipeJumped = false;
-let audioPaused = false;
+let audioPaused = true;
 
 function gamePlay() {
     window.location.reload();
