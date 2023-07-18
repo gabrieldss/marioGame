@@ -1,4 +1,4 @@
-![image](https://github.com/gabrieldss/marioGame/assets/33532210/d48fb504-8db9-4e25-9225-ed25da8cd8ba)
+![image](https://github.com/gabrieldss/marioGame/assets/33532210/edd79791-7801-4c7f-a08e-6b97250c5b2d)
 
 # Start on VS Code:
 __1__- npm install -g http-server
