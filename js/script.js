@@ -83,7 +83,7 @@ function showPauseMessage() {
     pauseMessage.style.fontSize = '80px'
     pauseMessage.style.position = "absolute";
     pauseMessage.style.top = "40%";
-    pauseMessage.style.left = "40%";
+    pauseMessage.style.left = "50%";
 }
 
 function showGameOverMessage() {
@@ -91,10 +91,10 @@ function showGameOverMessage() {
     gameOverMessage.textContent = "Game Over"
     document.body.appendChild(gameOverMessage);
     gameOverMessage.style.color = 'red'
-    gameOverMessage.style.fontSize = '100px'
+    gameOverMessage.style.fontSize = '90px'
     gameOverMessage.style.position = "absolute";
     gameOverMessage.style.top = "40%";
-    gameOverMessage.style.left = "40%";
+    gameOverMessage.style.left = "50%";
     clouds.style.animationPlayState = "paused";
     btnMusic.disabled = true;
     audio.pause();
