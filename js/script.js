@@ -115,7 +115,7 @@ const loop = setInterval(() => {
         mario.style.animation = 'none';
         pipe.style.left = `${marioPosition}px`;
         mario.src = './images/game-over.png';
-        mario.style.width = '75px';
+        mario.style.width = '70px';
         mario.style.marginLeft = '30px';
         mario.style.zIndex = '999';
         clearInterval(loop);
