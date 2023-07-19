@@ -95,5 +95,6 @@
 .btn-new-game,
 .btn-pause, 
 .btn-music {
+    cursor: pointer;
     padding: 2px;
 }
