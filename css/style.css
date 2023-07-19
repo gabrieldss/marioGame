@@ -91,3 +91,9 @@
     font-size: 28px;
     font-weight: bold !important;
 }
+
+.btn-new-game,
+.btn-pause, 
+.btn-music {
+    padding: 2px;
+}
