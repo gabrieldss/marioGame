@@ -91,7 +91,7 @@ function showGameOverMessage() {
     gameOverMessage.textContent = "Game Over"
     document.body.appendChild(gameOverMessage);
     gameOverMessage.style.color = 'red'
-    gameOverMessage.style.fontSize = '90px'
+    gameOverMessage.style.fontSize = '100px'
     gameOverMessage.style.position = "absolute";
     gameOverMessage.style.top = "40%";
     gameOverMessage.style.left = "35%";
