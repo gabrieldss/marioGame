@@ -42,7 +42,7 @@ function pauseGame() {
     }
 }
 
-function musicControll() {
+function musicControl() {
     if (!gamePaused && !isGameOver) {
         if (audio.paused) {
             audio.play();
@@ -66,7 +66,7 @@ function shortCuts(event) {
         }, 500);
     }
     if (event.keyCode === 77) {
-        musicControll();
+        musicControl();
     }
     if (event.keyCode === 78) {
         newGame();
